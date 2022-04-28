@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript">
+	function time()
+	{
+	today=new Date();
+	h=today.getHours();
+	m=today.getMinutes();
+	s=today.getSeconds();
+	document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+	setTimeout('time()',500);
+	}
+	</script>
+
+		<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript">
+			jQuery(window).load(function($){
+				atualizaRelogio();
+			});
+		</script>
+	<script>
+		function atualizaRelogio(){ 
+			var momentoAtual = new Date();
+			
+			var vhora = momentoAtual.getHours();
+			var vminuto = momentoAtual.getMinutes();
+			var vsegundo = momentoAtual.getSeconds();
+			
+			var vdia = momentoAtual.getDate();
+			var vmes = momentoAtual.getMonth() + 1;
+			var vano = momentoAtual.getFullYear();
+			
+			if (vdia < 10){ vdia = "0" + vdia;}
+			if (vmes < 10){ vmes = "0" + vmes;}
+			if (vhora < 10){ vhora = "0" + vhora;}
+			if (vminuto < 10){ vminuto = "0" + vminuto;}
+			if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+
+			dataFormat = vdia + " / " + vmes + " / " + vano;
+			horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+
+			document.getElementById("data").innerHTML = dataFormat;
+			document.getElementById("hora").innerHTML = horaFormat;
+
+			setTimeout("atualizaRelogio()",1000);
+		}
+	</script>
+<style id="applicationStylesheet" type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#iPhone_13_12_Pro_Max__93 {
+		position: absolute;
+		width: 428px;
+		height: 926px;
+		background-color: rgba(3,56,88,1);
+		overflow: hidden;
+	}
+	#n__ {
+		transform: matrix(1,0,0,1,7.5,35.5) rotate(90deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(156,206,217,1);
+	}
+	#Configuraes {
+		left: 55px;
+		top: 30px;
+		position: absolute;
+		overflow: visible;
+		width: 171px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 29px;
+		color: rgba(156,206,217,1);
+		letter-spacing: 0.02px;
+	}
+	#Retngulo_60 {
+		fill: rgba(156,206,217,1);
+	}
+	.Retngulo_60 {
+		position: absolute;
+		overflow: visible;
+		width: 84px;
+		height: 86px;
+		left: 78px;
+		top: 587px;
+	}
+	#Retngulo_61 {
+		fill: rgba(156,206,217,1);
+	}
+	.Retngulo_61 {
+		position: absolute;
+		overflow: visible;
+		width: 84px;
+		height: 86px;
+		left: 267px;
+		top: 587px;
+	}
+	#Caminho_47 {
+		fill: transparent;
+		stroke: rgba(3,56,88,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Caminho_47 {
+		overflow: visible;
+		position: absolute;
+		width: 10.748px;
+		height: 39.431px;
+		left: 127.077px;
+		top: 613.182px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Elipse_31 {
+		fill: rgba(3,56,88,1);
+		stroke: rgba(3,56,88,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Elipse_31 {
+		position: absolute;
+		overflow: visible;
+		width: 18px;
+		height: 18px;
+		left: 107px;
+		top: 621.096px;
+	}
+	#Caminho_48 {
+		fill: transparent;
+		stroke: rgba(3,56,88,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Caminho_48 {
+		overflow: visible;
+		position: absolute;
+		width: 12.676px;
+		height: 50.458px;
+		left: 319.222px;
+		top: 607.572px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Elipse_32 {
+		fill: rgba(3,56,88,1);
+	}
+	.Elipse_32 {
+		position: absolute;
+		overflow: visible;
+		width: 18px;
+		height: 18px;
+		left: 291.26px;
+		top: 621.096px;
+	}
+	#Caminho_49 {
+		fill: transparent;
+		stroke: rgba(3,56,88,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Caminho_49 {
+		overflow: visible;
+		position: absolute;
+		width: 10.748px;
+		height: 39.431px;
+		left: 311.336px;
+		top: 613.086px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Retngulo_62 {
+		fill: rgba(80,150,166,1);
+	}
+	.Retngulo_62 {
+		position: absolute;
+		overflow: visible;
+		width: 84px;
+		height: 86px;
+		left: 78px;
+		top: 709px;
+	}
+	#Retngulo_63 {
+		fill: rgba(156,206,217,1);
+	}
+	.Retngulo_63 {
+		position: absolute;
+		overflow: visible;
+		width: 84px;
+		height: 86px;
+		left: 267px;
+		top: 709px;
+	}
+	#Caminho_50 {
+		fill: transparent;
+		stroke: rgba(3,56,88,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Caminho_50 {
+		overflow: visible;
+		position: absolute;
+		width: 12.667px;
+		height: 57.397px;
+		left: 133.593px;
+		top: 726.171px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Elipse_33 {
+		fill: rgba(3,56,88,1);
+	}
+	.Elipse_33 {
+		position: absolute;
+		overflow: visible;
+		width: 18px;
+		height: 18px;
+		left: 99.444px;
+		top: 743.096px;
+	}
+	#Caminho_51 {
+		fill: transparent;
+		stroke: rgba(3,56,88,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Caminho_51 {
+		overflow: visible;
+		position: absolute;
+		width: 12.676px;
+		height: 50.458px;
+		left: 125.118px;
+		top: 729.572px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Caminho_52 {
+		fill: transparent;
+		stroke: rgba(3,56,88,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Caminho_52 {
+		overflow: visible;
+		position: absolute;
+		width: 10.748px;
+		height: 39.431px;
+		left: 118.111px;
+		top: 735.086px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Elipse_34 {
+		fill: rgba(3,56,88,1);
+	}
+	.Elipse_34 {
+		position: absolute;
+		overflow: visible;
+		width: 18px;
+		height: 18px;
+		left: 281.26px;
+		top: 743.096px;
+	}
+	#Caminho_53 {
+		fill: transparent;
+		stroke: rgba(3,56,88,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Caminho_53 {
+		overflow: visible;
+		position: absolute;
+		width: 12.667px;
+		height: 57.397px;
+		left: 315.408px;
+		top: 726.171px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Caminho_54 {
+		fill: transparent;
+		stroke: rgba(3,56,88,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Caminho_54 {
+		overflow: visible;
+		position: absolute;
+		width: 14.003px;
+		height: 66.214px;
+		left: 324.341px;
+		top: 721.762px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Caminho_55 {
+		fill: transparent;
+		stroke: rgba(3,56,88,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Caminho_55 {
+		overflow: visible;
+		position: absolute;
+		width: 12.676px;
+		height: 50.458px;
+		left: 306.933px;
+		top: 729.572px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Caminho_56 {
+		fill: transparent;
+		stroke: rgba(3,56,88,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Caminho_56 {
+		overflow: visible;
+		position: absolute;
+		width: 10.748px;
+		height: 39.431px;
+		left: 299.926px;
+		top: 735.086px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Grupo_7 {
+		position: absolute;
+		width: 200px;
+		height: 44px;
+		left: 114px;
+		top: 842px;
+		overflow: visible;
+	}
+	#Retngulo_51 {
+		fill: rgba(156,206,217,1);
+	}
+	.Retngulo_51 {
+		position: absolute;
+		overflow: visible;
+		width: 200px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#Configurar {
+		left: 56px;
+		top: 10px;
+		position: absolute;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(2,74,89,1);
+		letter-spacing: 0.02px;
+	}
+	#Retngulo_81 {
+		fill: rgba(255,255,255,1);
+	}
+	.Retngulo_81 {
+		position: absolute;
+		overflow: visible;
+		width: 324px;
+		height: 29px;
+		left: 52px;
+		top: 520px;
+	}
+	#n_ {
+		left: 111px;
+		top: 618px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(3,56,88,1);
+	}
+	#n__c {
+		left: 295px;
+		top: 616px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(3,56,88,1);
+	}
+	#n__da {
+		left: 102px;
+		top: 737px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(3,56,88,1);
+	}
+	#n__db {
+		left: 285px;
+		top: 740px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(3,56,88,1);
+	}
+	#Elipse_35 {
+		fill: transparent;
+		stroke: rgba(254,254,254,1);
+		stroke-width: 25px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Elipse_35 {
+		filter: drop-shadow(0px 0px 20px rgba(2, 74, 89, 1));
+		position: absolute;
+		overflow: visible;
+		width: 350px;
+		height: 344px;
+		left: 69px;
+		top: 127px;
+	}
+	#Elipse_38 {
+		fill: rgba(3,56,88,1);
+	}
+	.Elipse_38 {
+		filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
+		position: absolute;
+		overflow: visible;
+		width: 275px;
+		height: 268px;
+		left: 92px;
+		top: 150px;
+	}
+	#n_0 {
+		left: 169px;
+		top: 256px;
+		position: absolute;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Quicksand;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 80px;
+		color: rgba(156,206,217,1);
+	}
+	#n_1 {
+		left: 183px;
+		top: 183px;
+		position: absolute;
+		overflow: hidden;
+		width: 64px;
+		height: 97px;
+		text-align: left;
+		font-family: Quicksand;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 80px;
+		color: rgba(156,206,217,1);
+	}
+	#Retngulo_74 {
+		fill: rgba(156,206,217,1);
+	}
+	.Retngulo_74 {
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		height: 33px;
+		left: 147px;
+		top: 449px;
+	}
+	#Retngulo_75 {
+		fill: rgba(156,206,217,1);
+	}
+	.Retngulo_75 {
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		height: 33px;
+		left: 195px;
+		top: 449px;
+	}
+	#Retngulo_76 {
+		fill: rgba(156,206,217,1);
+	}
+	.Retngulo_76 {
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		height: 33px;
+		left: 339px;
+		top: 449px;
+	}
+	#Retngulo_77 {
+		fill: rgba(156,206,217,1);
+	}
+	.Retngulo_77 {
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		height: 33px;
+		left: 243px;
+		top: 449px;
+	}
+	#Retngulo_78 {
+		fill: rgba(80,150,166,1);
+	}
+	.Retngulo_78 {
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		height: 33px;
+		left: 291px;
+		top: 449px;
+	}
+	#QUA {
+		left: 149px;
+		top: 455px;
+		position: absolute;
+		overflow: visible;
+		width: 34px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 18px;
+		color: rgba(3,56,88,1);
+	}
+	#QUI {
+		left: 199px;
+		top: 455px;
+		position: absolute;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 18px;
+		color: rgba(3,56,88,1);
+	}
+	#SEX {
+		left: 248px;
+		top: 455px;
+		position: absolute;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 18px;
+		color: rgba(3,56,88,1);
+	}
+	#SAB {
+		left: 296px;
+		top: 455px;
+		position: absolute;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 18px;
+		color: rgba(156,206,217,1);
+	}
+	#DOM {
+		left: 340px;
+		top: 456px;
+		position: absolute;
+		overflow: visible;
+		width: 37px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 17px;
+		color: rgba(3,56,88,1);
+	}
+	#Retngulo_79 {
+		fill: rgba(156,206,217,1);
+	}
+	.Retngulo_79 {
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		height: 33px;
+		left: 99px;
+		top: 449px;
+	}
+	#Retngulo_80 {
+		fill: rgba(156,206,217,1);
+	}
+	.Retngulo_80 {
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		height: 33px;
+		left: 51px;
+		top: 449px;
+	}
+	#SEG {
+		left: 56px;
+		top: 455px;
+		position: absolute;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 18px;
+		color: rgba(2,14,38,1);
+	}
+	#TER {
+		left: 105px;
+		top: 455px;
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 18px;
+		color: rgba(3,56,88,1);
+	}
+</style>
+</head>
+<body>
+<div id="iPhone_13_12_Pro_Max__93">
+	<div id="n__">
+		<span>. . .</span>
+	</div>
+	<div id="Configuraes">
+		<span>Configurações</span>
+	</div>
+	<svg class="Retngulo_60">
+		<rect id="Retngulo_60" rx="18" ry="18" x="0" y="0" width="84" height="86">
+		</rect>
+	</svg>
+	<svg class="Retngulo_61">
+		<rect id="Retngulo_61" rx="18" ry="18" x="0" y="0" width="84" height="86">
+		</rect>
+	</svg>
+	<svg class="Caminho_47" viewBox="3817.5 -398 5.889 33.829">
+		<path id="Caminho_47" d="M 3817.5 -398 C 3817.5 -398 3830.74951171875 -383.90478515625 3817.5 -364.1714477539062">
+		</path>
+	</svg>
+	<svg class="Elipse_31">
+		<ellipse id="Elipse_31" rx="9" ry="9" cx="9" cy="9">
+		</ellipse>
+	</svg>
+	<svg class="Caminho_48" viewBox="3817.5 -398 7.808 44.856">
+		<path id="Caminho_48" d="M 3817.5 -398.0000305175781 C 3817.5 -398.0000305175781 3835.06884765625 -379.3100891113281 3817.5 -353.1442565917969">
+		</path>
+	</svg>
+	<svg class="Elipse_32">
+		<ellipse id="Elipse_32" rx="9" ry="9" cx="9" cy="9">
+		</ellipse>
+	</svg>
+	<svg class="Caminho_49" viewBox="3817.5 -398 5.889 33.829">
+		<path id="Caminho_49" d="M 3817.5 -398 C 3817.5 -398 3830.74951171875 -383.90478515625 3817.5 -364.1714477539062">
+		</path>
+	</svg>
+	<svg class="Retngulo_62">
+		<rect id="Retngulo_62" rx="18" ry="18" x="0" y="0" width="84" height="86">
+		</rect>
+	</svg>
+	<svg class="Retngulo_63">
+		<rect id="Retngulo_63" rx="18" ry="18" x="0" y="0" width="84" height="86">
+		</rect>
+	</svg>
+	<svg class="Caminho_50" viewBox="3817.5 -398 7.816 51.85">
+		<path id="Caminho_50" d="M 3817.5 -398 C 3817.5 -398 3835.08642578125 -376.3960266113281 3817.5 -346.1504821777344">
+		</path>
+	</svg>
+	<svg class="Elipse_33">
+		<ellipse id="Elipse_33" rx="9" ry="9" cx="9" cy="9">
+		</ellipse>
+	</svg>
+	<svg class="Caminho_51" viewBox="3817.5 -398 7.808 44.856">
+		<path id="Caminho_51" d="M 3817.5 -398.0000305175781 C 3817.5 -398.0000305175781 3835.06884765625 -379.3100891113281 3817.5 -353.1442565917969">
+		</path>
+	</svg>
+	<svg class="Caminho_52" viewBox="3817.5 -398 5.889 33.829">
+		<path id="Caminho_52" d="M 3817.5 -398 C 3817.5 -398 3830.74951171875 -383.90478515625 3817.5 -364.1714477539062">
+		</path>
+	</svg>
+	<svg class="Elipse_34">
+		<ellipse id="Elipse_34" rx="9" ry="9" cx="9" cy="9">
+		</ellipse>
+	</svg>
+	<svg class="Caminho_53" viewBox="3817.5 -398 7.816 51.85">
+		<path id="Caminho_53" d="M 3817.5 -398 C 3817.5 -398 3835.08642578125 -376.3960266113281 3817.5 -346.1504821777344">
+		</path>
+	</svg>
+	<svg class="Caminho_54" viewBox="3817.5 -398 9.145 60.667">
+		<path id="Caminho_54" d="M 3817.5 -397.9999694824219 C 3817.5 -397.9999694824219 3838.076904296875 -372.7221984863281 3817.5 -337.3333435058594">
+		</path>
+	</svg>
+	<svg class="Caminho_55" viewBox="3817.5 -398 7.808 44.856">
+		<path id="Caminho_55" d="M 3817.5 -398.0000305175781 C 3817.5 -398.0000305175781 3835.06884765625 -379.3100891113281 3817.5 -353.1442565917969">
+		</path>
+	</svg>
+	<svg class="Caminho_56" viewBox="3817.5 -398 5.889 33.829">
+		<path id="Caminho_56" d="M 3817.5 -398 C 3817.5 -398 3830.74951171875 -383.90478515625 3817.5 -364.1714477539062">
+		</path>
+	</svg>
+	<div id="Grupo_7">
+		<svg class="Retngulo_51">
+			<rect id="Retngulo_51" rx="21" ry="21" x="0" y="0" width="200" height="44">
+			</rect>
+		</svg>
+		<div id="Configurar">
+			<span><a href="alarme07horas.html">Configurar</span></a>
+		</div>
+	</div>
+	<svg class="Retngulo_81">
+        <rect id="Retngulo_81" rx="10" ry="10" x="0" y="0" width="324" height="29">
+        </rect>
+        <foreignobject x="55" y="4" width="324" height="29"> 
+            <text>Escolha o horário: </text>
+            <input name="hora" type="time">
+        </foreignobject>
+    </svg>
+	<div id="n_">
+		<span><a href="vibra1sab.html">.</span></a>
+	</div>
+	<div id="n__c">
+		<span><a href="vibra2sab.html">.</span></a>
+	</div>
+	<div id="n__da">
+		<span><a href="sab.html">.</span></a>
+	</div>
+	<div id="n__db">
+		<span><a href="vibra4sab.html">.</span></a>
+	</div>
+	<svg class="Elipse_35">
+		<ellipse id="Elipse_35" rx="145" ry="142" cx="145" cy="142">
+		</ellipse>
+	</svg>
+	<svg class="Elipse_38">
+        <foreignobject x="80" y="105" width="250" height="250"> 
+            <body onload="time()" style="font-family: Verdana">
+                   <div id="txt" style= "color: white";></div>
+            </body>
+            <script language=javascript type="text/javascript">
+                now = new Date
+                document.write (now.getDate() + "/" + now.getMonth() + "/" + now.getFullYear() )
+            </script>
+            </foreignobject>
+	<div id="n_0">
+		
+	</div>
+	<div id="n_1">
+		
+	</div>
+	<svg class="Retngulo_74">
+		<rect id="Retngulo_74" rx="9" ry="9" x="0" y="0" width="38" height="33">
+		</rect>
+	</svg>
+	<svg class="Retngulo_75">
+		<rect id="Retngulo_75" rx="9" ry="9" x="0" y="0" width="38" height="33">
+		</rect>
+	</svg>
+	<svg class="Retngulo_76">
+		<rect id="Retngulo_76" rx="9" ry="9" x="0" y="0" width="38" height="33">
+		</rect>
+	</svg>
+	<svg class="Retngulo_77">
+		<rect id="Retngulo_77" rx="9" ry="9" x="0" y="0" width="38" height="33">
+		</rect>
+	</svg>
+	<svg class="Retngulo_78">
+		<rect id="Retngulo_78" rx="9" ry="9" x="0" y="0" width="38" height="33">
+		</rect>
+	</svg>
+<div id="QUA">
+            <span><a href="qua.html">QUA</a></span>
+        </div>
+        <div id="QUI">
+            <span><a href="qui.html">QUI</a></span>
+        </div>
+        <div id="SEX">
+            <span><a href="sex.html">SEX</a></span>
+        </div>
+        <div id="SAB">
+            <span><a href="sab.html">SAB</a></span>
+        </div>
+        <div id="DOM">
+            <span><a href="dom.html">DOM</a></span>
+        </div>
+	<svg class="Retngulo_79">
+		<rect id="Retngulo_79" rx="9" ry="9" x="0" y="0" width="38" height="33">
+		</rect>
+	</svg>
+	<svg class="Retngulo_80">
+		<rect id="Retngulo_80" rx="9" ry="9" x="0" y="0" width="38" height="33">
+		</rect>
+	</svg>
+<div id="SEG">
+            <span><a href="seg.html">SEG</a></span>
+        </div>
+        <div id="TER">
+            <span><a href="ter.html">TER</a></span>
+        </div>
+</div>
+</body>
+</html>
+
